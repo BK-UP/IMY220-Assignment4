@@ -5,7 +5,7 @@ let youtube = (masg)=>{
 };
 
 $(document).ready(function () {
-    $("#left").click(function () {
+    $("#left").on('click',function () {
         let msg = $("#message").val();
         let check = msg.trim();
         let url = (youtube(msg));
@@ -18,7 +18,7 @@ $(document).ready(function () {
         }
         $("#message").val("");
     });
-    $("#right").click(function () {
+    $("#right").on('click',function () {
         let msg = $("#message").val();
         let check = msg.trim();
         let url = (youtube(msg));
